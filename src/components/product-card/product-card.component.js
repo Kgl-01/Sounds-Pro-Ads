@@ -4,9 +4,9 @@ const ProductCard = ({ item }) => {
   const { title, image, price } = item;
   return (
     <div className="product-card">
-      <img className="product-image" src={`${item.image}`} />
-      <div className="title">{item.title}</div>
-      <span className="price">{item.price}</span>
+      <img className="product-image" alt={title} src={`${image}`} />
+      <div className="title">{title}</div>
+      <span className="price">{price}</span>
     </div>
   );
 };
